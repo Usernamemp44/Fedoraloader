@@ -97,7 +97,7 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 	case WM_HELP:
 		{
-			ShellExecute(hWnd, nullptr, TEXT("https://github.com/Fedoraware/Fedoraloader"), nullptr, nullptr, SW_SHOW);
+			ShellExecute(hWnd, nullptr, TEXT("https://github.com/Usernamemp44/Fedoraloader"), nullptr, nullptr, SW_SHOW);
 		}
 		return false;
 

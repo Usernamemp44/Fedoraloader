@@ -11,7 +11,7 @@ DWORD Utils::FindProcess(LPCSTR procName)
 	procEntry.dwSize = sizeof(procEntry);
 
 	// Get snapshot of processes
-	const HANDLE hSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+	const HANDLE hSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 1);
 	if (hSnapshot == INVALID_HANDLE_VALUE) { return 0; }
 	if (!Process32First(hSnapshot, &procEntry)) { return 0; }
 
